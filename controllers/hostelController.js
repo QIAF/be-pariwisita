@@ -19,7 +19,6 @@ const getAllHostel = async (req, res, next) => {
 const createHostel = async (req, res, next) => {
   try {
     const { name, price, facility, location, rating } = req.body;
-    console.log(req.body);
     const files = req.files;
     console.log(req.files);
     if (!files || !files.hostel_picture) {
@@ -34,8 +33,6 @@ const createHostel = async (req, res, next) => {
       rating,
       hostel_picture: hostelPicture.imagesUrl,
     };
-    // console.log(data)
-
     const newHostel = await Hostel.create(data);
     console.log("data", newHostel);
 
