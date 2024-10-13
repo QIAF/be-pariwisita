@@ -13,7 +13,7 @@ module.exports = {
         type: Sequelize.STRING
       },
       price: {
-        type: Sequelize.FLOAT
+        type: Sequelize.STRING
       },
       location: {
         type: Sequelize.STRING

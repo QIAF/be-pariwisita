@@ -14,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
   Hostel.init(
     {
       name: DataTypes.STRING,
-      price: DataTypes.FLOAT,
+      price: DataTypes.STRING,
       facility: DataTypes.STRING,
       location: DataTypes.STRING,
       hostel_picture: {
